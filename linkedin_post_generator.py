@@ -29,7 +29,7 @@ if st.button("Generate LinkedIn Post"):
   """
 
   # Backend Code
-  responses = client.chat.comletions.create(
+  response = client.chat.completions.create(
       model="gpt-4o-mini",
       messages=[
           {"role": "user", "content": prompt_template}
