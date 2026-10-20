@@ -4,6 +4,8 @@ import os
 
 os.environ["OPENAI_API_KEY"] = st.secrets["OPENAI_API_KEY"]
 
+client = OpenAI(api_key=os.environ["OPENAI_API_KEY"])
+
 # Frontend Code
 st.title("AI Linked Post Generator")
 
